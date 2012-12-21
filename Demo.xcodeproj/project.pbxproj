@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B08715E134838360079D63A /* MHDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B08715D134838360079D63A /* MHDatabase.m */; };
 		7B08716013483B080079D63A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B08715F13483B080079D63A /* libsqlite3.dylib */; };
-		7B08716513483CD20079D63A /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7B08716213483CD20079D63A /* Database.sqlite */; };
+		7BB71ACB1684C9E50030E35B /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7BB71AC21684C9E50030E35B /* Database.sqlite */; };
+		7BB71ACF1684C9E50030E35B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71AC71684C9E50030E35B /* main.m */; };
+		7BB71AD01684C9E50030E35B /* MHDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71ACA1684C9E50030E35B /* MHDatabase.m */; };
 		7BD1FC7113351087005CAC78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1FC7013351087005CAC78 /* UIKit.framework */; };
 		7BD1FC7313351087005CAC78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1FC7213351087005CAC78 /* Foundation.framework */; };
 		7BD1FC7513351087005CAC78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD1FC7413351087005CAC78 /* CoreGraphics.framework */; };
-		7BD1FC9D1335112D005CAC78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1FC991335112D005CAC78 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B08715C134838360079D63A /* MHDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDatabase.h; sourceTree = "<group>"; };
-		7B08715D134838360079D63A /* MHDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDatabase.m; sourceTree = "<group>"; };
 		7B08715F13483B080079D63A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		7B08716213483CD20079D63A /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
+		7BB71AC21684C9E50030E35B /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Database.sqlite; path = Database/Database.sqlite; sourceTree = "<group>"; };
+		7BB71AC51684C9E50030E35B /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		7BB71AC61684C9E50030E35B /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		7BB71AC71684C9E50030E35B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BB71AC91684C9E50030E35B /* MHDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDatabase.h; sourceTree = "<group>"; };
+		7BB71ACA1684C9E50030E35B /* MHDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDatabase.m; sourceTree = "<group>"; };
 		7BD1FC6C13351087005CAC78 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD1FC7013351087005CAC78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BD1FC7213351087005CAC78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BD1FC7413351087005CAC78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7BD1FC931335112D005CAC78 /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
-		7BD1FC961335112D005CAC78 /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
-		7BD1FC991335112D005CAC78 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B08716113483CD20079D63A /* Database */ = {
+		7BB71AC01684C9E50030E35B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7B08716213483CD20079D63A /* Database.sqlite */,
+				7BB71AC21684C9E50030E35B /* Database.sqlite */,
+				7BB71AC51684C9E50030E35B /* Demo-Info.plist */,
+				7BB71AC61684C9E50030E35B /* Demo-Prefix.pch */,
+				7BB71AC71684C9E50030E35B /* main.m */,
 			);
-			path = Database;
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		7BB71AC81684C9E50030E35B /* MHDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				7BB71AC91684C9E50030E35B /* MHDatabase.h */,
+				7BB71ACA1684C9E50030E35B /* MHDatabase.m */,
+			);
+			path = MHDatabase;
 			sourceTree = "<group>";
 		};
 		7BD1FC6113351087005CAC78 = {
 			isa = PBXGroup;
 			children = (
-				7BD1FC951335112D005CAC78 /* Sources */,
-				7B08716113483CD20079D63A /* Database */,
-				7BD1FC921335112D005CAC78 /* Resources */,
+				7BB71AC81684C9E50030E35B /* MHDatabase */,
+				7BB71AC01684C9E50030E35B /* Demo */,
 				7BD1FC6F13351087005CAC78 /* Frameworks */,
 				7BD1FC6D13351087005CAC78 /* Products */,
 			);
@@ -81,25 +92,6 @@
 				7B08715F13483B080079D63A /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7BD1FC921335112D005CAC78 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7BD1FC931335112D005CAC78 /* Demo-Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		7BD1FC951335112D005CAC78 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				7BD1FC961335112D005CAC78 /* Demo-Prefix.pch */,
-				7BD1FC991335112D005CAC78 /* main.m */,
-				7B08715C134838360079D63A /* MHDatabase.h */,
-				7B08715D134838360079D63A /* MHDatabase.m */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B08716513483CD20079D63A /* Database.sqlite in Resources */,
+				7BB71ACB1684C9E50030E35B /* Database.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD1FC9D1335112D005CAC78 /* main.m in Sources */,
-				7B08715E134838360079D63A /* MHDatabase.m in Sources */,
+				7BB71ACF1684C9E50030E35B /* main.m in Sources */,
+				7BB71AD01684C9E50030E35B /* MHDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +175,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -197,7 +189,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -207,13 +199,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sources/Demo-Prefix.pch";
-				INFOPLIST_FILE = "Resources/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -222,13 +221,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sources/Demo-Prefix.pch";
-				INFOPLIST_FILE = "Resources/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
